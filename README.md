@@ -45,7 +45,7 @@ Unete a nuestro servidor de Discord para mas actualizaciones: https://discord.gg
 
 Si te gusta Xyphos, déjame saber en los comentarios o en mi servidor de Discord.
 
-📌 Contribuciones
+📌 Contribuciones 
 
 Si deseas contribuir a este proyecto, siéntete libre de hacer un fork del repositorio en GitHub y enviar tus mejoras a través de un pull request.
 
