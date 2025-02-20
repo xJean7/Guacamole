@@ -1,0 +1,22 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "§7No bio yet...",
+    "name": "Xyphos v1",
+    "uuid": "e8f3a3b5-6b24-4d96-9b70-ef6c10e32467",
+    "version": [1, 0, 0],
+    "min_engine_version": [1, 20, 0]
+  },
+  "modules": [
+    {
+      "description": "No bio yet...",
+      "type": "resources",
+      "uuid": "b1c7db4c-91e6-45b3-84fa-13c124eb41e6",
+      "version": [1, 0, 4]
+    }
+  ],
+  "metadata": {
+    "Author": ["xJean"],
+    "Discord": "https://discord.gg/gD2U569dYq"
+  }
+}
