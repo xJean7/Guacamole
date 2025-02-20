@@ -1,4 +1,4 @@
-Guacamole Texture Pack
+Xyphos Texture Pack
 
 Versión: 1.0
 Compatible con: Minecraft Bedrock Edition
