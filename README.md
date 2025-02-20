@@ -5,7 +5,7 @@ Compatible con: Minecraft Bedrock Edition
 
 📜 Descripción
 
-Guacamole es un paquete de texturas diseñado para mejorar la experiencia del usuario en Minecraft añadiendo funciones importantes y útiles. Este pack no solo mejora la estética, sino que también optimiza la interfaz y resalta detalles importantes para facilitar el juego.
+Xyphos es un paquete de texturas diseñado para mejorar la experiencia del usuario en Minecraft añadiendo funciones importantes y útiles. Este pack no solo mejora la estética, sino que también optimiza la interfaz y resalta detalles importantes para facilitar el juego.
 
 🛠 Instalación
 
@@ -28,11 +28,11 @@ Enlace de descarga
 ❓ FAQ
 
 ¿Este pack afecta el rendimiento?
-No, Guacamole está optimizado para funcionar en la mayoría de dispositivos sin afectar el rendimiento.
+No, Xyphos está optimizado para funcionar en la mayoría de dispositivos sin afectar el rendimiento.
 
 ¿Puedo usar este pack en mis videos o servidores?
 Sí, siempre y cuando des crédito al creador.
-
+    
 ¿Tienes pensado añadir más cambios en el futuro?
 Sí, el pack se actualizará con nuevas mejoras y compatibilidad.
 
@@ -43,7 +43,7 @@ Unete a nuestro servidor de Discord para mas actualizaciones: https://discord.gg
 
 📢 ¡Comparte tu opinión!
 
-Si te gusta Guacamole, déjame saber en los comentarios o en mi servidor de Discord.
+Si te gusta Xyphos, déjame saber en los comentarios o en mi servidor de Discord.
 
 📌 Contribuciones
 
