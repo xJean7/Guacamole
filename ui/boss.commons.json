@@ -1,0 +1,182 @@
+{
+
+  "namespace": "boss_commons",
+
+
+  "boss_health_template": {
+    "type": "panel",
+    "anchor_from": "top_middle",
+    "anchor_to": "top_middle",
+    "size": [240, 61],
+    "bindings": [
+      {
+        "binding_name": "(#bossName = $boss_name)",
+        "binding_type": "collection",
+        "binding_collection_name": "boss_bars",
+        "binding_name_override": "#visible"
+      }
+    ]
+  },
+
+  "filled_bossbar_template": {
+  },
+
+
+  "wither_bossbar@boss_health_template": {
+    "controls": [
+      {
+        "wither_empty_health@wither_empty_health": {
+          "layer": 1,
+          "size": [173, 7],
+          "keep_ratio": false
+        }
+      },
+      {
+        "wither_filled_health@wither_filled_health": {
+          "layer": 2,
+          "size": [173, 7],
+          "keep_ratio": false
+        }
+      },
+      {
+        "wither_overlay_bossbar@wither_overlay_bossbar": {
+          "layer": 3,
+          "size": [190, 55],
+          "offset": [0,9],
+          "keep_ratio": false
+        }
+      }
+    ]
+  },
+
+  "ender_bossbar@boss_health_template": {
+    "controls": [
+      {
+        "ender_empty_health@ender_empty_health": {
+          "layer": 1,
+          "size": [168, 6],
+          "keep_ratio": false
+        }
+      },
+      {
+        "ender_filled_health@ender_filled_health": {
+          "layer": 2,
+          "size": [168, 6],
+          "keep_ratio": false
+        }
+      },
+      {
+        "ender_overlay_bossbar@ender_overlay_bossbar": {
+          "layer": 3,
+          "size": [190, 55],
+          "offset": [0,9],
+          "keep_ratio": false
+        }
+      }
+    ]
+  },
+
+  "raid_bossbar@boss_health_template": {
+    "controls": [
+      {
+        "raid_empty_health@raid_empty_health": {
+          "layer": 1,
+          "size": [176, 6],
+          "keep_ratio": false
+        }
+      },
+      {
+        "raid_filled_health@raid_filled_health": {
+          "layer": 2,
+          "size": [176, 6],
+          "keep_ratio": false
+        }
+      },
+      {
+        "raid_overlay_bossbar@raid_overlay_bossbar": {
+          "layer": 3,
+          "size": [190, 55],
+          "offset": [0,9],
+          "keep_ratio": false
+        }
+      }
+    ]
+  },
+
+
+  "wither_filled_health": {
+    "type": "image",
+    "texture": "textures/ui/BossBar/wither/filled_bossbar_wither",
+    "clip_direction": "left",
+    "clip_pixelperfect": true,
+    "bindings": [
+      {
+        "binding_name": "#progress_percentage",
+        "binding_name_override": "#clip_ratio",
+        "binding_type": "collection",
+        "binding_collection_name": "$progress_bar_collection"
+      }
+    ]
+  },
+
+  "wither_empty_health": {
+    "type": "image",
+    "texture": "textures/ui/BossBar/wither/empty_bossbar_wither"
+  },
+
+  "wither_overlay_bossbar": {
+    "type": "image",
+    "texture": "textures/ui/BossBar/wither/overlay_bossbar_wither"
+  },
+
+
+  "ender_filled_health": {
+    "type": "image",
+    "texture": "textures/ui/BossBar/ender_dragon/filled_bossbar_ender",
+    "clip_direction": "left",
+    "clip_pixelperfect": true,
+    "bindings": [
+      {
+        "binding_name": "#progress_percentage",
+        "binding_name_override": "#clip_ratio",
+        "binding_type": "collection",
+        "binding_collection_name": "$progress_bar_collection"
+      }
+    ]
+  },
+
+  "ender_empty_health": {
+    "type": "image",
+    "texture": "textures/ui/BossBar/ender_dragon/empty_bossbar_ender"
+  },
+
+  "ender_overlay_bossbar": {
+    "type": "image",
+    "texture": "textures/ui/BossBar/ender_dragon/overlay_bossbar_ender"
+  },
+
+  "raid_filled_health": {
+    "type": "image",
+    "texture": "textures/ui/BossBar/raid/filled_bossbar_raid",
+    "clip_direction": "left",
+    "clip_pixelperfect": true,
+    "bindings": [
+      {
+        "binding_name": "#progress_percentage",
+        "binding_name_override": "#clip_ratio",
+        "binding_type": "collection",
+        "binding_collection_name": "$progress_bar_collection"
+      }
+    ]
+  },
+
+  "raid_empty_health": {
+    "type": "image",
+    "texture": "textures/ui/BossBar/raid/empty_bossbar_raid"
+  },
+
+  "raid_overlay_bossbar": {
+    "type": "image",
+    "texture": "textures/ui/BossBar/raid/overlay_bossbar_raid"
+  }
+}

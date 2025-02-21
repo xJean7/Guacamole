@@ -1,0 +1,105 @@
+{
+  "boss_health_panel": {
+    "type": "panel",
+    "size": [182, 20],
+    "anchor_from": "top_middle",
+    "anchor_to": "top_middle",
+    "$progress_bar_collection": "boss_bars",
+    "controls": [
+      {
+        "vanilla_bossbar":{
+          "type":"panel",
+          "controls":[
+            {
+              "boss_name@boss_name_panel": {}
+            },
+            {
+              "progress_bar_for_collections@common.progress_bar_for_collections": {
+                "offset": [0, 10]
+              }
+            }
+          ],
+          "bindings": [
+            {
+              "binding_name": "#bossName",
+              "binding_type": "collection",
+              "binding_collection_name": "boss_bars"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(((#bossName - $ender_boss_string) = #bossName) and ((#bossName - $raid_boss_string) = #bossName) and ((#bossName - $wither_boss_string) = #bossName))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "ender_bossbar@boss_commons.ender_bossbar": {
+          "offset": [0, -16],
+          "layer": 2,
+          "bindings": [
+            {
+              "binding_name": "#bossName",
+              "binding_type": "collection",
+              "binding_collection_name": "boss_bars"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not ((#bossName - $ender_boss_string) = #bossName))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "raid_bossbar@boss_commons.raid_bossbar": {
+          "offset": [0, -16],
+          "layer": 2,
+          "bindings": [
+            {
+              "binding_name": "#bossName",
+              "binding_type": "collection",
+              "binding_collection_name": "boss_bars"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not ((#bossName - $raid_boss_string) = #bossName))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "wither_bossbar@boss_commons.wither_bossbar": {
+          "offset": [0, -16],
+          "layer": 2,
+          "bindings": [
+            {
+              "binding_name": "#bossName",
+              "binding_type": "collection",
+              "binding_collection_name": "boss_bars"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not ((#bossName - $wither_boss_string) = #bossName))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ],
+    "bindings": [
+      {
+        "binding_name": "#bar_visible",
+        "binding_type": "collection",
+        "binding_collection_name": "boss_bars",
+        "binding_name_override": "#visible"
+      },
+      {
+        "binding_name": "#bossName",
+        "binding_type": "collection",
+        "binding_collection_name": "boss_bars"
+      }
+    ]
+  }
+}
