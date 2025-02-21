@@ -1,21 +1,92 @@
 {
+  "namespace": "hud",
+  "item": {
+    "type": "custom",
+    "renderer": "inventory_item_renderer",
+    "size": [
+      22,
+      22
+    ]
+  },
+  "hud_content": {
+    "modifications": [
+      {
+        "array_name": "controls",
+        "operation": "insert_front",
+        "value": [
+          {
+            "item": {
+              "type": "stack_panel",
+              "anchor_from": "bottom_right",
+              "anchor_to": "middle_right",
+              "orientation": "vertical",
+              "size": [
+                50,
+                18
+              ],
+              "offset": [
+                0,
+                -125
+              ],
+              "controls": [
+                {
+                  "recovery_compass@hud.item": {
+                    "property_bag": {
+                      "#item_id_aux": 44761088
+                    }
+                  }
+                },
+                {
+                  "compass@hud.item": {
+                    "property_bag": {
+                      "#item_id_aux": 22609920
+                    }
+                  }
+                },
+                {
+                  "clock@hud.item": {
+                    "property_bag": {
+                      "#item_id_aux": 22740992
+                    }
+                  }
+                }
+              ],
+              "bindings": [
+                {
+                  "binding_name": "#hud_visible",
+                  "binding_name_override": "#visible",
+                  "binding_type": "global"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
   "boss_health_panel": {
     "type": "panel",
-    "size": [182, 20],
+    "size": [
+      182,
+      20
+    ],
     "anchor_from": "top_middle",
     "anchor_to": "top_middle",
     "$progress_bar_collection": "boss_bars",
     "controls": [
       {
-        "vanilla_bossbar":{
-          "type":"panel",
-          "controls":[
+        "vanilla_bossbar": {
+          "type": "panel",
+          "controls": [
             {
               "boss_name@boss_name_panel": {}
             },
             {
               "progress_bar_for_collections@common.progress_bar_for_collections": {
-                "offset": [0, 10]
+                "offset": [
+                  0,
+                  10
+                ]
               }
             }
           ],
@@ -35,7 +106,10 @@
       },
       {
         "ender_bossbar@boss_commons.ender_bossbar": {
-          "offset": [0, -16],
+          "offset": [
+            0,
+            -16
+          ],
           "layer": 2,
           "bindings": [
             {
@@ -53,7 +127,10 @@
       },
       {
         "raid_bossbar@boss_commons.raid_bossbar": {
-          "offset": [0, -16],
+          "offset": [
+            0,
+            -16
+          ],
           "layer": 2,
           "bindings": [
             {
@@ -71,7 +148,10 @@
       },
       {
         "wither_bossbar@boss_commons.wither_bossbar": {
-          "offset": [0, -16],
+          "offset": [
+            0,
+            -16
+          ],
           "layer": 2,
           "bindings": [
             {
