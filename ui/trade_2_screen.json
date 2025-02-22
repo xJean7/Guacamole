@@ -1,0 +1,53 @@
+{
+  "namespace": "trade2",
+  "top_half_stack_panel/how_to_play_button_holder": {
+    "modifications": [
+      {
+        "control_name": "how_to_play_button",
+        "operation": "remove"
+      },
+      {
+        "array_name": "controls",
+        "operation": "insert_back",
+        "value": [
+          {
+            "quick_trade_button@bt_quick_crafting.quick_trade_button": {
+              "anchor_from": "right_middle",
+              "anchor_to": "right_middle"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "trade_toggle": {
+    "$toggle_enabled_binding_name": "",
+    "$toggle_enabled_binding_condition": "always",
+    "$unchecked_control": "trade2.trade_toggle_unchecked",
+    "$checked_control": "trade2.trade_toggle_checked",
+    "$unchecked_locked_control": "trade2.trade_toggle_unchecked",
+    "$unchecked_locked_hover_control": "trade2.toggle_unchecked_hover",
+    "$checked_locked_control": "trade2.trade_toggle_checked",
+    "$checked_locked_hover_control": "trade2.toggle_checked_hover",
+    "property_bag": {
+      "#collection_name": "trade2_result_item"
+    }
+  },
+  "tier_stack_panel": {
+    "bindings": []
+  },
+  "hover_button": {
+    "bindings": []
+  },
+  "arrow_holder/arrow_image": {
+    "bindings": []
+  },
+  "arrow_holder": {
+    "modifications": [
+      {
+        "control_name": "lock_image",
+        "operation": "remove"
+      }
+    ]
+  }
+}
